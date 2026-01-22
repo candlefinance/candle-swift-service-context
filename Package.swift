@@ -11,25 +11,9 @@ let package = Package(
                 "CandleServiceContextModule"
             ]
         ),
-
-        // Deprecated/legacy module
-        .library(
-            name: "InstrumentationBaggage",
-            targets: [
-                "InstrumentationBaggage"
-            ]
-        ),
     ],
     targets: [
         .target(name: "CandleServiceContextModule"),
-
-        // Deprecated/legacy module
-        .target(
-            name: "InstrumentationBaggage",
-            dependencies: [
-                .target(name: "CandleServiceContextModule")
-            ]
-        ),
 
         // ==== --------------------------------------------------------------------------------------------------------
         // MARK: Tests
