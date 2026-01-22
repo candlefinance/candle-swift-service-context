@@ -12,7 +12,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_exported import ServiceContextModule
+@_exported import CandleServiceContextModule
 
 @available(*, deprecated, message: "Use 'ServiceContext' from 'ServiceContextModule' instead.")
 public typealias Baggage = ServiceContext

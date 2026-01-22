@@ -27,7 +27,7 @@
 //===----------------------------------------------------------------------===//
 
 import Foundation
-import ServiceContextModule
+import CandleServiceContextModule
 
 @inline(never)
 func take1(context: ServiceContext) -> Int {

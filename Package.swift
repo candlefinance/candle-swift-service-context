@@ -6,9 +6,9 @@ let package = Package(
     name: "swift-service-context",
     products: [
         .library(
-            name: "ServiceContextModule",
+            name: "CandleServiceContextModule",
             targets: [
-                "ServiceContextModule"
+                "CandleServiceContextModule"
             ]
         ),
 
@@ -21,13 +21,13 @@ let package = Package(
         ),
     ],
     targets: [
-        .target(name: "ServiceContextModule"),
+        .target(name: "CandleServiceContextModule"),
 
         // Deprecated/legacy module
         .target(
             name: "InstrumentationBaggage",
             dependencies: [
-                .target(name: "ServiceContextModule")
+                .target(name: "CandleServiceContextModule")
             ]
         ),
 
@@ -37,7 +37,7 @@ let package = Package(
         .testTarget(
             name: "ServiceContextTests",
             dependencies: [
-                .target(name: "ServiceContextModule")
+                .target(name: "CandleServiceContextModule")
             ]
         ),
     ]

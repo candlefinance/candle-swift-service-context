@@ -29,7 +29,7 @@ let package = Package(
             name: "TracingBenchmarks",
             dependencies: [
                 .product(name: "Benchmark", package: "package-benchmark"),
-                .product(name: "ServiceContextModule", package: "swift-service-context"),
+                .product(name: "CandleServiceContextModule", package: "swift-service-context"),
             ],
             path: "Benchmarks/ServiceContextBenchmarks",
             plugins: [

@@ -27,7 +27,7 @@
 //===----------------------------------------------------------------------===//
 
 import Benchmark
-import ServiceContextModule
+import CandleServiceContextModule
 
 func runPassAroundStaticStringsSmall(iterations: Int) {
     var context = ServiceContext.topLevel
