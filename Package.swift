@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-service-context",
+    name: "candle-swift-service-context",
     products: [
         .library(
             name: "CandleServiceContextModule",
